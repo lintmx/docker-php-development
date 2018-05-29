@@ -1,0 +1,4 @@
+.env
+logs/mariadb/
+logs/nginx/
+database/
