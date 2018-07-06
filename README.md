@@ -1,13 +1,17 @@
-# Docker PHP Development Environment
+## Docker PHP Development Environment
 
 将 PHP 开发环境放入 Docker 中
 
-# Feature
+## Usage
 
-- [ ] 多个 PHP 版本
+配置 `.env` 和 `config` 文件
 
-- [ ] 项目配置自动脚本
+## Feature
 
-# License
+- [x] 多个 PHP 版本
+
+- [x] 项目配置自动脚本
+
+## License
 
 MIT
