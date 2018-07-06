@@ -1,15 +1,15 @@
 server {
     listen       80;
-    server_name  bj.lintmx.xyz;
+    server_name  <{project_name}>.<{project_domain}>;
 
-    root /www/t1/public;
+    root /www/<{project_dir}>;
 
     index index.php index.html index.htm;
     
     location ~ \.php$ {
         fastcgi_split_path_info ^(.+?\.php)(/.*)$;
         fastcgi_param  PATH_INFO $fastcgi_path_info;
-        fastcgi_pass   php:9000;
+        fastcgi_pass   <{php_version}>:9000;
         fastcgi_index  index.php;
         fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include        fastcgi_params;

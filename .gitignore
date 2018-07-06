@@ -1,4 +1,8 @@
+.DS_Store
 .env
-logs/mariadb/
-logs/nginx/
-database/
+config
+conf/nginx/conf.d/*.conf
+logs/mariadb/*
+logs/nginx/*
+database/*
+!*.gitkeep
